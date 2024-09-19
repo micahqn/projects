@@ -1,11 +1,21 @@
-thought_process = False
+thought_process = True
+
+import random
+import string
+
+def randomword(length):
+   letters = string.ascii_lowercase
+   return ''.join(random.choice(letters) for i in range(length))
 
 map = int(input("\nWhat square map do you want solved? (i.e 4 or 5)"))
 letters = input("\nInput all letters in map, type order like reading a book ")
 
-if len(letters) != map*map:
+if letters == "R":
+  letters = randomword(map*map)
+elif len(letters) != map*map:
   print(f"\nInvalid input, {len(letters)} letters given, {map*map} letters needed")
   exit()
+
 if not letters.isalpha():
   print("\nInvalid input, given letters include special characters")
   exit()
@@ -117,13 +127,12 @@ for row in grid:
     square.find_neighbors()
 
 all_answers = []
-
 for row in grid:
   for square in row:
     print("Square", (row.index(square)+1)+grid.index(row)*len(grid), ("("+str(square.letter)+")"), "is connected to...")
     connections = findconnectionsofsquare(square)
     if connections == []:
-      print("No connections")
+      print("No connections\n")
       continue
     for path in connections:
       print(path)
@@ -134,3 +143,11 @@ all_answers = list(dict.fromkeys(all_answers))
 all_answers.sort(key=len, reverse=True)
 print("All possible words:")
 print(" ".join(all_answers))
+print()
+
+for x in range(map):
+  row = []
+  for y in range(map):
+    row.append(Square(letters[x*map+y], x, y))
+  grid.append(row)
+  print("   ".join(square.letter for square in row)+"\n")
