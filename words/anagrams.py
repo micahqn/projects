@@ -44,8 +44,9 @@ anagrams = []
 for combo in combos:
   for letter in combo:
     combo[combo.index(letter)] = unscramble[int(letter)-1]
-  combos[combos.index(combo)] = "".join(combo)
+  combos[combos.index(combo)] = "".join(sorted(combo))
 
+combos = list(dict.fromkeys(combos))
 
 combos.sort(key=len, reverse=True)
 if thought_process: 
@@ -53,7 +54,7 @@ if thought_process:
 
 
 for combo in combos:
-  with open("allwords.txt", "r") as file:
+  with open("words//allwords.txt", "r") as file:
     for line in file:
       word = line.strip()
       if isAnagram(combos[combos.index(combo)], word) and word not in anagrams:

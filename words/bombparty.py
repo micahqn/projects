@@ -4,7 +4,7 @@ taken = []
 while True:
   sequence = input("\nWhat word to you want found? ")
   best = ""
-  with open("allwords.txt", "r") as file:
+  with open("words//allwords.txt", "r") as file:
     for line in file:
       word = line.strip()
       if sequence.upper() in word and (len(word) > len(best) or (len(word) == len(best) and randint(1,3) == 1)) and word not in taken:

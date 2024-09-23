@@ -1,4 +1,4 @@
-thought_process = True
+thought_process = False
 
 import random
 import string
@@ -27,7 +27,7 @@ grid = []
 #word functions
 def find_possible(begin):
   possible = []
-  with open("allwords.txt", "r") as file:
+  with open("words//allwords.txt", "r") as file:
     for line in file:
       word = line.strip()
       if word.startswith(begin):
@@ -38,7 +38,7 @@ def sanitycheck(possible, begin):
   return any(word.startswith(begin) for word in possible)
 
 def aWord(given):
-  with open("allwords.txt", "r") as file:
+  with open("words//allwords.txt", "r") as file:
     for line in file:
       word = line.strip()
       if word == given:

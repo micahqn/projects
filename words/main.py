@@ -1,3 +1,4 @@
+
 #performance may be worse on slower computers, ctrl v into vscode for quicker results
 
 game = input("1 : anagrams\n2 : bomb party\n3 : word hunt\ntype game you want to play: ")
@@ -5,11 +6,11 @@ game = input("1 : anagrams\n2 : bomb party\n3 : word hunt\ntype game you want to
 file_name = ""
 
 if game == "1":
-  file_name = "anagrams.py"
+  file_name = "words//anagrams.py"
 elif game == "2":
-  file_name = "bombparty.py"
+  file_name = "words//bombparty.py"
 elif game == "3":
-  file_name = "wordhunt.py"
+  file_name = "words//wordhunt.py"
 
 if file_name == "":
   print("\ninvalid input")
