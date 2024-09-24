@@ -1,5 +1,5 @@
 import gensim.downloader as api
-import inflection
+from inflection import *
 
 """
 models
@@ -9,7 +9,7 @@ glove-wiki-gigaword-100
 
 """
 print("loading, please wait")
-model = api.load("word2vec-google-news-300")
+model = api.load("glove-wiki-gigaword-100")
 choice = None
 
 
@@ -26,11 +26,11 @@ while True:
     
     print()
     if choice == "+":
-        add_words = [input("add a word "), input("add another word to that ")]
+        add_words = [input("add a word ").replace(" ", "_").lower(), input("add another word to that ").replace(" ", "_").lower()]
         inputs = add_words
     elif choice == "-":
-        add_words = [input("add a word ")]
-        sub_words = [input("subtract the word with ")]
+        add_words = [input("add a word ").replace(" ", "_").lower()]
+        sub_words = [input("subtract the word with ").replace(" ", "_").lower()]
         inputs = [add_words[0], sub_words[0]]
     elif choice == "*":
         continue
@@ -40,18 +40,18 @@ while True:
 
     for inputted in inputs:
         results_list = [key_result[0] for key_result in result]
-        pluralized_input = inflection.pluralize(inputted)
+        pluralized_input = pluralize(inputted)
         if pluralized_input in results_list:
             print("removed", result[results_list.index(pluralized_input)])
             result.pop(results_list.index(pluralized_input))
 
     if choice in ["+", "-"]:
-        print(add_words[0], choice, add_words[1] if choice == "+" else sub_words[0], "=", result[0][0])
+        print(titleize(add_words[0]), choice, titleize(add_words[1]) if choice == "+" else titleize(sub_words[0]), "=", titleize(result[0][0]))
         print(similarity, "\n\ntop 5 runner ups:")
 
     for i in range(1, 6):
         most_similar_key, similarity = result[i]
-        print(inflection.ordinalize(i+1)+":", add_words[0], choice, add_words[1] if choice == "+" else sub_words[0], "=", most_similar_key)
+        print(ordinalize(i+1)+":", titleize(add_words[0]), choice, titleize(add_words[1]) if choice == "+" else titleize(sub_words[0]), "=", titleize(most_similar_key))
     input("enter to use again")
 
 
