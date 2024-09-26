@@ -33,7 +33,20 @@ while True:
         sub_words = [input("subtract the word with ").replace(" ", "_").lower()]
         inputs = [add_words[0], sub_words[0]]
     elif choice == "*":
-        continue
+        while True:
+            word = input("add a word, or type ([end]) to go to subtraction. ")
+            if not word == "[end]":
+                add_words.append(word)
+            else:
+                break
+
+        while True:
+            word = input("subtract a word, or type ([end]) to finish. ")
+            if not word == "[end]":
+                sub_words.append(word)
+            else:
+                break
+
 
     result = model.most_similar(positive=add_words, negative=sub_words)
     most_similar_key, similarity = result[0]
@@ -48,10 +61,25 @@ while True:
     if choice in ["+", "-"]:
         print(titleize(add_words[0]), choice, titleize(add_words[1]) if choice == "+" else titleize(sub_words[0]), "=", titleize(result[0][0]))
         print(similarity, "\n\ntop 5 runner ups:")
+        for i in range(1, 6):
+            most_similar_key, similarity = result[i]
+            print(ordinalize(i+1)+": ", titleize(add_words[0]), choice, titleize(add_words[1]) if choice == "+" else titleize(sub_words[0]), "=", titleize(most_similar_key))
 
-    for i in range(1, 6):
-        most_similar_key, similarity = result[i]
-        print(ordinalize(i+1)+":", titleize(add_words[0]), choice, titleize(add_words[1]) if choice == "+" else titleize(sub_words[0]), "=", titleize(most_similar_key))
+    elif choice == "*":
+        for word in add_words:
+            word = titleize(word)
+        add_words = " + ".join(add_words)
+
+        for word in sub_words:
+            word = titleize(word)
+        sub_words = " + ".join(sub_words)
+
+        print(add_words+" subtracted by "+sub_words+"="+titleize(result[0][0]))
+        print(similarity, "\n\ntop 5 runner ups:")
+        for i in range(1, 6):
+            most_similar_key, similarity = result[i]
+            print(ordinalize(i+1)+":", add_words+" subtracted by "+sub_words+" = "+titleize(most_similar_key))
+
     input("enter to use again")
 
 
