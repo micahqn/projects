@@ -1,4 +1,4 @@
-import random as r
+from random import *
 from sqlitedict import SqliteDict
 #https://www.askpython.com/python/examples/save-data-in-python
 
@@ -82,7 +82,7 @@ while True:
         continue
     else:
         current_grid = [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]
-        if r.randint(1,1) == 1: continue
+        if randint(1,1) == 1: continue
 
     gridId = gridToString(current_grid)
 
@@ -90,7 +90,7 @@ while True:
         CurrentMatchBoxAi.memory[gridId] = findAllPossibleMoves(current_grid)
 
     pm = [possible for possible in CurrentMatchBoxAi.memory[gridId]] #possible moves
-    pick = r.choice(r.choices([p for p in pm], [CurrentMatchBoxAi.memory[gridId][q] for q in pm], k=100))
+    pick = choice(choices([p for p in pm], [CurrentMatchBoxAi.memory[gridId][q] for q in pm], k=100))
     current_grid[int(pick[0])-1][int(pick[1])-1] = "O"
     previous_move = [gridId, pick]
 
