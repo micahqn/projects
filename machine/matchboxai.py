@@ -1,11 +1,12 @@
 from random import *
 from sqlitedict import SqliteDict
+import math
 #https://www.askpython.com/python/examples/save-data-in-python
 
 current_grid = [
     [" ", " ", " "], 
-    [" ", " ", " "], 
-    [" ", " ", " "]
+    [" ", "O", "X"], 
+    [" ", " ", "X"]
     ]
 
 class MatchboxModel:
@@ -60,6 +61,20 @@ def findAllPossibleMoves(grid):
             if grid[row][column] == " ": moves[str(row+1)+str(column+1)] = 1
     return moves
 
+def findCongruentGames(grid):
+    def rotate(grid):
+        newgrid = [list(reversed(x)) for x in zip(*grid)]
+        return newgrid
+    
+    congruent_grids = [grid]
+    for _ in range(3):
+        congruent_grids.append(rotate(congruent_grids[-1]))
+        
+    return congruent_grids
+
+for game in findCongruentGames(current_grid):
+    printBoard(game)
+
 CurrentMatchBoxAi = MatchboxModel("Bartholomew")
 previous_move = [] #gridstring, move
 
@@ -70,16 +85,20 @@ while True:
 
     if len(plr_input) == 2:
         current_grid[int(plr_input[0])-1][int(plr_input[1])-1] = "X"
+
     elif plr_input == "r" and previous_move != []:
-        CurrentMatchBoxAi.memory[previous_move[0]][previous_move[1]] += 12
+
+        CurrentMatchBoxAi.memory[previous_move[0]][previous_move[1]] += 15
         input("rewarded, enter to continue ")
         continue
+
     elif plr_input == "p" and previous_move != []:
-        for key in CurrentMatchBoxAi.memory[previous_move[0]]: 
-            CurrentMatchBoxAi.memory[previous_move[0]][key] += 100 if not key == previous_move[1] else 0
+        CurrentMatchBoxAi.memory[previous_move[0]][previous_move[1]] = max(0, CurrentMatchBoxAi.memory[previous_move[0]][previous_move[1]] - 10)
+
         input("punished, enter to continue ")
         print(CurrentMatchBoxAi.memory[previous_move[0]])
         continue
+
     else:
         current_grid = [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]
         if randint(1,1) == 1: continue

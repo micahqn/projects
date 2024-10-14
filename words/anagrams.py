@@ -1,5 +1,7 @@
 thought_process = False
 
+mode = "p" #parallel or sequential (p or s)
+
 def find_all_combos(scrambled):
   limit = len(scrambled)
 
@@ -52,16 +54,22 @@ combos.sort(key=len, reverse=True)
 if thought_process: 
   print(combos)
 
+if mode == "s":
+  for combo in combos:
+    with open("words//allwords.txt", "r") as file:
+      for line in file:
+        word = line.strip()
+        if isAnagram(combos[combos.index(combo)], word) and word not in anagrams:
+            anagrams.append(word)
+            print(word)
 
-for combo in combos:
+if mode == "p":
   with open("words//allwords.txt", "r") as file:
-    for line in file:
-      word = line.strip()
-      if isAnagram(combos[combos.index(combo)], word) and word not in anagrams:
-          anagrams.append(word)
-          print(word)
+      for line in file:
+        word = line.strip()
+        if "".join(sorted(word.lower())) in combos and word not in anagrams:
+            anagrams.append(word)
 
 
 anagrams.sort(key=len, reverse=True)
-if thought_process: 
-  print(anagrams)
+print(" ".join(anagrams))
