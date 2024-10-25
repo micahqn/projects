@@ -7,8 +7,8 @@ def randomword(length):
    letters = string.ascii_lowercase
    return ''.join(random.choice(letters) for i in range(length))
 
-map = int(input("\nWhat square map do you want solved? (i.e 4 or 5)"))
-letters = input("\nInput all letters in map, type order like reading a book ")
+map = int(input("\nWhat square map do you want solved? (i.e 4 or 5) "))
+letters = input("\nInput all letters in map, type order like reading a book (enter R for randomized board) ")
 
 if letters == "R":
   letters = randomword(map*map)

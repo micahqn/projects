@@ -1,6 +1,4 @@
 
-#performance may be worse on slower computers, ctrl v into vscode for quicker results
-
 game = input("1 : anagrams\n2 : bomb party\n3 : word hunt\ntype game you want to play: ")
 
 file_name = ""
