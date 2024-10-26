@@ -1,6 +1,5 @@
 thought_process = False
 
-mode = "s" #parallel or sequential (p or s)
 maximum = 0
 
 import time
@@ -91,34 +90,19 @@ if maximum != 0:
   for combo in blacklist:
     combos.remove(combo)
 
-print(f"{time.time()-start}")
-
 combos = list(dict.fromkeys(combos))
 
 combos.sort(key=len, reverse=True)
 if thought_process: 
   print(combos)
 
-if mode == "s":
-  for combo in combos:
-    with open("words//allwords.txt", "r") as file:
-      for line in file:
-        word = line.strip()
-        if isAnagram(combos[combos.index(combo)], word) and word not in anagrams:
-            anagrams.append(word)
-            print(word)
-
-if mode == "p":
-  with open("words//allwords.txt", "r") as file:
-      for line in file:
-        word = line.strip()
-        if "".join(sorted(word.lower())) in combos and word not in anagrams:
-            anagrams.append(word)
-
-
-
+with open("words//allwords.txt", "r") as file:
+  for line in file:
+    word = line.strip()
+    if "".join(sorted(word.lower())) in combos and word not in anagrams:
+      anagrams.append(word)
 
 anagrams.sort(key=len, reverse=True)
 print(" ".join(anagrams))
 print(f"\n{len(anagrams)} words in total")
-print(f"{time.time()-start}")
+print(f"elapsed time: {round(time.time()-start, 3)}s")
