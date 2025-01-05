@@ -1,0 +1,31 @@
+Neurons - A nerve cell, the basic building block of the nervous system
+
+Cell body - The part of the neuron that has the nucleus, the cell's life support
+
+Dendrites - Bushy and branching extensions that receive and integrate messages, and send impulses to the cell body
+
+Axon - Neuron extension that sends messages to glands, other neurons, or muscles
+
+Myelin Sheath - A fatty tissue layer encasing the axons of some neurons, which increases the speed of neural impulses
+
+Glial Cell - A cell in the nervous system that supports, nourishes, and protects neurons, and also is linked with learning, memory, and thinking
+
+Action Potential - A neural impulse, a brief electrical charge that travels down the axon
+
+Threshold - The level of stimulation required to trigger a neural impulse 
+
+Refractory Period - The brief resting pause after a neuron has fired, new action potential cannot happen if the neuron does not return to the resting state.
+
+All-or-None Response - A neuron's reaction of firing at full force or not firing at all.
+
+Synapse - The junction of the axon tip of the sending neuron and the dendrite/cell body of the receiving neuron. The tiny gap is called the synaptic gap/cleft
+
+Neurotransmitter - Chemical messengers that cross synaptic gaps, bind to receptor sites, and influence if it will generate a neural impulse.
+
+Reuptake - A neurotransmitter's reabsorption by the sending neuron. 
+
+Endorphins - Natural opiate-like neurotransmitters that affect the perception of pain or pleasure.
+
+Agonist - A molecule that increases the action of a neurotransmitter.
+
+Antagonist - A molecule that decreases the action of a neurotransmitter.
