@@ -1,5 +1,5 @@
 from pathlib import Path
-from random import choices
+from random import choices, choice, shuffle
 from inflection import tableize
 import os
 
@@ -52,8 +52,8 @@ def questioning(questions):
     test = choices(possibles, weights=question_weights, k=1)[0]
     word, definition = test.split(" - ", 1)
     print(definition)
-    answer = tableize(input("Enter answer: "))
-    if answer == tableize(word):
+    answer = input("Enter answer or type 'hint': ")
+    if tableize(answer) == tableize(word):
         input("Good Job")
         questions[test] -= 1
         if questions[test] == 0:
@@ -61,11 +61,34 @@ def questioning(questions):
             if questions == {}:
                 input("You have mastered this set!")
                 return
+    elif answer == "hint":
+        clear()
+        print(definition+"\n")
+        mcq = []
+        mcq.append(word)
+        for i in range(3):
+            mcq.append(choice(list(questions)).split(" - ", 1)[0])
+        shuffle(mcq)
+        for mca in mcq:
+            print(mca)
+        answer = tableize(input("Enter answer or type 'hint': "))
+        if answer == tableize(word):
+            input("Good Job")
+            questions[test] -= 1
+            if questions[test] == 0:
+                del questions[test]
+                if questions == {}:
+                    input("You have mastered this set!")
+                    return
+        else:
+            input(f"Answer was {word}")
+
+
     else:
         input(f"Answer was {word}")
     clear()
     questioning(questions)
 
-
+clear()
 questioning(weighted_questions)
 
