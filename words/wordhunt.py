@@ -49,6 +49,7 @@ def aWord(given):
 #classes
 class Square:
   global grid
+  __slots__ = ("letter", "x", "y", "neighbors")
   def __init__(self, letter, x, y):
     self.letter = letter
     self.x = x
@@ -64,6 +65,7 @@ class Square:
 
 class Path:
   global grid
+  __slots__ = ("order", "word", "possible")
   def __init__(self, order):
     self.order = order
     word = []

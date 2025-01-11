@@ -1,19 +1,21 @@
 from random import *
 from sqlitedict import SqliteDict
-import math
 #https://www.askpython.com/python/examples/save-data-in-python
+
+#ai only is affected by operant conditioning, and does not observe the player's moves. 
+#not finished, adding bot vs bot, saving, win functions, and generalization soon 
 
 current_grid = [
     [" ", " ", " "], 
-    [" ", "O", "X"], 
-    [" ", " ", "X"]
+    [" ", "X", " "], 
+    [" ", " ", "O"]
     ]
 
 class MatchboxModel:
     def __init__(self, name):
         self.name = name
         self.memory = {
-            "#########" : {"11":1, "12":1, "13":1, "21":1, "22":1, "23":1, "31":1, "32":1, "33":1}
+            "#########" : {"11":10, "12":10, "13":10, "21":10, "22":10, "23":10, "31":10, "32":10, "33":10}
         }
 
 def save(key, value, cache_file="cache.sqlite3"):
@@ -61,19 +63,20 @@ def findAllPossibleMoves(grid):
             if grid[row][column] == " ": moves[str(row+1)+str(column+1)] = 1
     return moves
 
-def findCongruentGames(grid):
+def findCongruentGames(prev_move):
+    grid, play = stringToGrid(prev_move[0]), prev_move[1]
     def rotate(grid):
         newgrid = [list(reversed(x)) for x in zip(*grid)]
         return newgrid
     
+    grid[int(play[0])-1][int(play[1])-1] = "!"
+
     congruent_grids = [grid]
     for _ in range(3):
         congruent_grids.append(rotate(congruent_grids[-1]))
         
     return congruent_grids
 
-for game in findCongruentGames(current_grid):
-    printBoard(game)
 
 CurrentMatchBoxAi = MatchboxModel("Bartholomew")
 previous_move = [] #gridstring, move
@@ -81,19 +84,22 @@ previous_move = [] #gridstring, move
 while True:
     print("Vs", CurrentMatchBoxAi.name)
     printBoard(current_grid)
-    plr_input = input("enter coords (row, column) or reward/punish (r or p) previous move ")
+    plr_input = input("enter coords (row, column) or reinforce/punish (r or p) previous move ")
 
     if len(plr_input) == 2:
         current_grid[int(plr_input[0])-1][int(plr_input[1])-1] = "X"
 
     elif plr_input == "r" and previous_move != []:
+        generalized_games = findCongruentGames(previous_move)
+        for tempgame in generalized_games:
+            printBoard(tempgame)
 
         CurrentMatchBoxAi.memory[previous_move[0]][previous_move[1]] += 15
-        input("rewarded, enter to continue ")
+        input("reinforced, enter to continue ")
         continue
 
     elif plr_input == "p" and previous_move != []:
-        CurrentMatchBoxAi.memory[previous_move[0]][previous_move[1]] = max(0, CurrentMatchBoxAi.memory[previous_move[0]][previous_move[1]] - 10)
+        CurrentMatchBoxAi.memory[previous_move[0]][previous_move[1]] = max(0, CurrentMatchBoxAi.memory[previous_move[0]][previous_move[1]] - 4)
 
         input("punished, enter to continue ")
         print(CurrentMatchBoxAi.memory[previous_move[0]])
@@ -101,7 +107,7 @@ while True:
 
     else:
         current_grid = [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]
-        if randint(1,1) == 1: continue
+        if randint(1,1) == 1: continue #continue for swapping order of who plays. 
 
     gridId = gridToString(current_grid)
 

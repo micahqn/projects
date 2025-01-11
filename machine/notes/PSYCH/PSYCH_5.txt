@@ -1,0 +1,47 @@
+Memory - The persistence of learning over time through the encoding, storage, and retrieval of information.
+ 
+Recall - A measure of memory in which the person must retrieve information learned earlier, as on a fill-in-the-blank test. 
+  
+Recognition - A measure of memory in which the person identifies items previously learned, as on a multiple-choice test.
+  
+Relearning - A measure of memory that assesses the amount of time saved when learning material again. 
+  
+Encoding - The process of getting information into the memory system. 
+  
+Storage - The process of retaining encoded information over time. 
+  
+Retrieval - The process of getting information out of memory storage. 
+  
+Parallel Processing - Processing many aspects of a problem all at the same time, which is the natural mode of information processing for lots of functions.
+ 
+Sensory Memory - The immediate very brief recording of sensory information in the memory system. 
+  
+Short-Term Memory - Activated memory that holds a few items briefly, such as digits of a phone number while calling, before the information is stored or forgotten. 
+  
+Long-Term Memory - The relatively permanent and limitless storehouse of the memory system. Includes knowledge, skills, and experiences. 
+  
+Working Memory - A newer understanding of short-term memory that adds conscious, active processing of incoming auditory and visual information, and of information retrieved from long-term memory. 
+  
+Explicit Memory- The retention of facts and experiences that one can consciously know and 'declare'
+  
+Effortful Processing - Encoding that requires attention and conscious effort.  
+  
+Automatic Processing - Unconscious encoding of incidental information such as space, time, and of well-learned information, like the meaning of words. 
+  
+Implicit Memory - The retention of learned skills or classically conditioned associations independent of conscious recollection. 
+  
+Iconic Memory - A momentary sensory memory of visual stimuli; a picture-image memory lasts no more than a few tenths of a second. 
+  
+Echoic Memory - A momentary sensory memory of auditory stimuli; if attention is elsewhere, sounds and words can still be recalled within 3 or 4 seconds  
+  
+Chunking - Organizing items into familiar, manageable units; often occurs automatically.   
+  
+Mnemonics - Memory aids, especially those that use vivid imagery and organizational devices. 
+  
+Spacing Effect - The tendency for distributed study or practice to better long-term retention than is achieved through mass study or practice.  
+  
+Testing Effect - Enhanced memory after retrieving, rather than simply rereading information.
+  
+Shallow Processing - Encoding on a basic level, based on the structure or appearance of words.  
+  
+Deep Processing - Encoding semantically, based on the meaning of the words; tends to yield the best retention. 

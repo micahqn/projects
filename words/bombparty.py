@@ -2,7 +2,7 @@ from random import randint
 
 taken = []
 while True:
-  sequence = input("\nWhat word to you want found? ")
+  sequence = input("\nWhat word do you want found? ")
   best = ""
   with open("words//allwords.txt", "r") as file:
     for line in file:
