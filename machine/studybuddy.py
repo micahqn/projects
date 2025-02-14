@@ -66,7 +66,7 @@ def questioning(questions):
         print(definition+"\n")
         mcq = []
         mcq.append(word)
-        for i in range(3):
+        for _ in range(3):
             mcq.append(choice(list(questions)).split(" - ", 1)[0])
         shuffle(mcq)
         for mca in mcq:

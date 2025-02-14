@@ -66,7 +66,7 @@ def isAnagram(scrambled, striped):
 to calculate presets
 
 f = open("words//gen.txt", "a")
-f.write(str(find_all_combos("e"*14)))
+f.write(str(find_all_combos("e"*15)))
 f.close()
 """
 

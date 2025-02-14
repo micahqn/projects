@@ -9,7 +9,7 @@ glove-wiki-gigaword-100
 
 """
 print("loading, please wait")
-model = api.load("glove-wiki-gigaword-100")
+model = api.load("word2vec-google-news-300")
 choice = None
 
 
