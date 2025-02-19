@@ -1,7 +1,7 @@
 from google import genai
 import os
 
-client = genai.Client(api_key="AIzaSyBoVIii97ga5mTa6C9r0JQCVMJvDRLI_wM")
+client = genai.Client(api_key="")
 chat = client.chats.create(model="gemini-2.0-flash")
 
 def save(message, who="gamemaster"):
