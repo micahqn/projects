@@ -39,3 +39,11 @@ Narcissism - Excessive self-love and self-absorption
 Achievement Motivation - A desire for significant accomplishment, for master of skills or ideas, for control, and for attaining a high standard. 
 
 Grit - Passion and perseverance in the pursuit of long-term goals. 
+
+Emotions - A response of the whole organism, involving physiological arousal, expressive behaviors, and a conscious experience. 
+
+James-Lange Theory - The theory that the experience of emotion is our awareness of our physiological responses to an emotion-arousing stimulus. 
+
+Cannon-Bard Theory - The theory that an emotion-arousing stimulus simultaneously triggers physiological responses and the subjective experience of emotion. 
+
+Two-Factor Theory - The theory that to experience emotion one must be physically aroused and cognitively label the arousal. 
