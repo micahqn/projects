@@ -4,7 +4,7 @@ from inflection import tableize
 import os
 from google import genai
 
-client = genai.Client(api_key="AIzaSyBoVIii97ga5mTa6C9r0JQCVMJvDRLI_wM")
+client = genai.Client(api_key="AIzaSyBoVIii97ga5mTa6C9r0JQCVMJvDRLI_wM") #pls don't steal my key i dont feel like hiding it 🙏
 chat = client.chats.create(model="gemini-2.0-flash")
 
 notes_dir = Path.cwd() / "machine" / "notes"
@@ -56,7 +56,7 @@ def questioning(questions):
     test = choices(possibles, weights=question_weights, k=1)[0]
     word, definition = test.split(" - ", 1)
 
-    print(chat.send_message(message=[f"create a random scenario or question, where the answer is '{word}' and the definition is '{definition}.' Just include the question by itself, and don't say the answer. write it in an AP style format"]).text)
+    print(chat.send_message(message=[f"create a random scenario or question, where the answer is '{word}' and the definition is '{definition}.' Just include the question by itself, and don't say the answer. write it in an AP style format where the question reveals a high understanding of the answer"]).text)
 
     answer = input("Enter answer or type 'hint': ")
     if tableize(answer) == tableize(word):
@@ -69,7 +69,7 @@ def questioning(questions):
                 return
     elif answer == "hint":
         clear()
-        print(chat.send_message(message=[f"restate the previous question and give a hint on the previous question, where the answer is '{word}' and the definition is '{definition}.' Just include the question by itself, and don't say the answer"]).text)
+        print(chat.send_message(message=[f"restate the previous question and give a hint on the previous question, where the answer is '{word}' and the definition is '{definition}.'"]).text)
         answer = tableize(input("Enter answer: "))
         if answer == tableize(word):
             input("Good Job")

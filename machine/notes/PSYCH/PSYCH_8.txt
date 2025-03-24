@@ -1,0 +1,63 @@
+Psychological Disorders - A syndrome marked by a clinically significant disturbance in an individual’s cognition, emotion, regulation, or behavior.
+
+Medical Model - The concept that diseases have physical causes that can be diagnosed, treated, and cured.
+
+Epigenetics - The study of environment influences on gene expression that occur without a DNA change
+
+ADHD - A psychological disorder marked by extreme inattention and/or hyperactivity and impulsivity. 
+
+Anxiety Disorders - Psychological disorders characterized by distressing, persisting anxiety or maladaptive behaviors that reduce anxiety. 
+
+Social Anxiety Disorder - Intense fear and avoidance of social situations. 
+
+Generalized Anxiety Disorder - An anxiety disorder where someone is continually tense, apprehensive, and in a state of autonomic nervous system arousal. 
+
+Panic Disorder - An anxiety disorder marked by unpredictable, minutes long episodes of intense dread in which a person may experience terror and accompanying chest pain, choking, or other frightening experiences.  
+
+Agoraphobia - Fear or avoidance of situations, such as crowds or wide open places, where one has felt loss of control or panic. 
+
+Phobias - An anxiety disorder marked by a persistent, irrational fear and avoidance of a specific object, activity, or situation. 
+
+Obsessive-Compulsive Disorder - A disorder characterized by unwanted repetitive thoughts, actions, or both
+
+Post Traumatic Stress Disorder - A disorder characterized by haunting memories, nightmares, hypervigilance, social withdrawal, jumpy anxiety, numbness of feeling, and or insomnia that lingers for four weeks or more after a traumatic experience. 
+
+Major Depressive Disorders - A disorder in which a person experiences, in the absence of drugs or other medical conditions, two or more weeks with five or more symptoms, at least one of which must be either, depressed mood or loss of interest or pleasure. 
+
+Bipolar Disorder - A disorder in which a person alternates between the hopelessness and lethargy of depression and the overexcited state of mania.
+
+Mania - A hyperactive, wildly optimistic state in which dangerously poor judgement is common. 
+
+Rumination - Compulsive fretting; overthinking our problems and their causes
+
+Schizophrenia - A disorder characterized by delusions, hallucinations, disorganized speech, and or diminished, inappropriate emotional expression. 
+
+Psychotic Disorder - A group of disorders marked by irrational ideas, distorted perception, and a loss of contact with reality. 
+
+Hallucinations - False sensory experiences, such as seeing something in the absence of an external visual stimulus. 
+
+Delusions - A false belief. Often of persecution or grandeur, that may accompany psychotic disorders. 
+
+Chronic Schizophrenia - A form of schizophrenia in which symptoms usually appear by late adolescence or early adulthood, As people age, psychotic episodes last longer and recovery periods shorten. 
+
+Acute Schizophrenia - A form of schizophrenia that can begin at any age; frequently occurs in response to a traumatic event. 
+
+Somatic Symptom Disorder - A psychological disorder in which the symptoms take a somatic form without apparent physical cause. 
+
+Conversion Disorder - A disorder related to somatic symptom disorder in which a person experiences very specific, physical symptoms that are not compatible with recognized medical or neurological conditions. 
+
+Illness Anxiety Disorder - A disorder related to somatic symptom disorder in which a person interprets normal physical sensations as symptoms of disease. 
+
+Dissociative Disorder - Controversial, rare disorders in which conscious awareness becomes separated from previous memories, thoughts, and feelings. 
+
+Dissociative Identity Disorder - A rare dissociative disorder in which a person exhibits two or more distinct and alternating personalities. 
+
+Personality Disorder - Inflexible  and enduring behavior patterns that impair social functioning. 
+
+Antisocial Personality Disorder - A personality disorder in which a person exhibits a lack of conscience for wrongdoing, even toward friends and family members; may be aggressive and ruthless or a clever con artist. 
+
+Anorexia Nervosa - An eating disorder in which a person maintains a starvation diet despite being significantly underweight; sometimes accompanied by excessive exercise. 
+
+Bulimia Nervosa - An eating disorder in which a person’s binge eating is followed by inappropriate weight-loss promoting behavior, such as vomiting, laxative use, fasting, or excessive exercise. 
+
+Binge-Eating Disorder - Significant binge-eating episodes, followed by distress, disgust, or guilt, but without the compensatory behavior that marks bulimia nervosa. 
