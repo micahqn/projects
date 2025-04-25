@@ -61,3 +61,77 @@ Anorexia Nervosa - An eating disorder in which a person maintains a starvation d
 Bulimia Nervosa - An eating disorder in which a person’s binge eating is followed by inappropriate weight-loss promoting behavior, such as vomiting, laxative use, fasting, or excessive exercise. 
 
 Binge-Eating Disorder - Significant binge-eating episodes, followed by distress, disgust, or guilt, but without the compensatory behavior that marks bulimia nervosa. 
+
+Psychotherapy - Treatment involving psychological techniques; consists of interactions between a trained therapist and someone seeking to overcome psychological difficulties or achieve personal growth.  
+
+Biomedical Therapy - Prescribed medications or procedures that act directly on the person’s psychology. 
+
+Eclectic - An approach to psychotherapy that uses techniques from various forms of therapy.
+
+Psychoanalysis - Freud’s therapeutic technique in treating psychological disorders, where the therapist’s interpretations of dreams, free associations, etc, can release repressed feelings and give the patient self-insight. 
+
+Resistance - In psychoanalysis, the blocking from consciousness of anxiety-laden material.
+
+Interpretation - In psychoanalysis, the analyst’s noting supposed dream meanings, resistances, and other significant behaviors and events in order to promote insight. 
+
+Transferring - In psychoanalysis, the patient’s transfer to the analyst of emotions linked with other relationships.
+
+Psychodynamic Therapy - Therapy derived from the psychodynamic tradition; views individuals as responding to unconscious forces and childhood experiences, and seeks to enhance self-insight. 
+
+Insight Therapy - Therapies that aim to improve psychological functioning by increasing a person’s awareness of underlying motives and defenses. 
+
+Client-Centered Therapy - The therapist uses techniques such as active listening within an accepting, genuine, empathic environment to facilitate a client’s growth.
+
+Active Listening - Empathic listening in which the listener echoes, restates, and clarifies. 
+
+Unconditional Positive Regard - A caring, accepting, non judgemental attitude which is believed to help clients develop self-awareness and self-acceptance. 
+
+Behavior Therapy - Therapy that applies learning principles to the elimination of unwanted behaviors. 
+
+Counterconditioning - A behavior therapy procedure that uses classical conditioning to evoke new responses to stimuli that triggers unwanted behaviors. 
+
+Exposure Therapy - A behavioral technique that treats anxieties by exposing people to the things they fear and avoid.
+
+Systematic Desensitization - A type of exposure therapy that associates a pleasant relaxed state with gradually increasing anxiety-triggering stimuli.  
+
+VR Exposure Therapy - A counterconditioning technique that treats anxiety through electronic simulations where people can safely face their greatest fears. 
+
+Aversive Conditioning - A type of counterconditioning that associates an unpleasant state with an unwanted behavior. 
+
+Token Economy - An operant conditioning procedure where people earn a token for exhibiting a desired behavior and can later trade those tokens for privileges or treats.  
+
+Cognitive Therapy - Therapy that teaches new, more adaptive ways of thinking, based on the assumption that thoughts intervene between events and our emotional reactions. 
+
+Rational-Emotive Behavior Therapy - A confrontational cognitive therapy that vigorously challenges the people’s illogical, self-defeating attitudes and assumptions. 
+
+Cognitive-Behavioral Therapy - An integrative therapy that combines cognitive therapy and behavioral therapy. 
+
+Group Therapy - Therapy conducted with groups rather than individuals, providing benefits from group interaction. 
+
+Family Therapy - Therapy that treats people in the context of their family system. Views an individual’s unwanted behaviors as influenced by, or directed at, other family members.  
+
+Meta-Analysis - A procedure for statistically combining the results of many different research studies.  
+
+Evidence-Based Practice - Clinical decision making that integrates the best available research with clinical expertise and patient characteristics and preferences. 
+
+Therapeutic Alliance - A bond of trust and mutual understanding between a therapist and a client, who work together constructively to overcome the client’s problem. 
+
+Psychopharmacology - The study of effects of drugs on mind and behavior.
+
+Antipsychotic Drugs - Drugs used to treat schizophrenia and other forms of severe thought disorders. 
+
+Antianxiety Drugs - Drugs used to control anxiety and agitation.
+
+Antidepressant Drugs - Drugs used to treat depression, anxiety disorders, OCD, PTSD
+
+Electrocompulsive Therapy - A biomedical therapy for severely depressed patients in which a brief electric current is sent through the brain of an anesthetized patient. 
+
+Repetitive Transcranial Magnetic Stimulation - The application of repeated pulses of magnetic energy to the brain, used to stimulate or suppress brain activity. 
+
+Psychosurgery - Surgery that removes or destroys brain tissue in an effort to change behavior. 
+
+Lobotomy - A psychosurgical procedure once used to calm uncontrollably emotional or violent patients. The procedure cut the nerves connecting the frontal lobes to the emotion-controlling centers of the inner brain.
+
+Resilience - The personal strength that helps most people cope with stress and recover from adversity and even trauma.
+
+Posttraumatic Growth - Positive psychological changes as a result of struggling with extremely challenging circumstances and life crises. 
