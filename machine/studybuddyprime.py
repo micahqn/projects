@@ -80,11 +80,13 @@ def questioning(questions):
                     input("You have mastered this set!")
                     return
         else:
-            input(f"Answer was {word}")
+            print(f"Answer was {word}")
+            input(chat.send_message(message=[f"on the previous question, explain why the answer is not '{answer}' and the real answer is '{word}.' Give a large breakdown why, or if their answer is more correct than the real answer, address it"]).text)
 
 
     else:
-        input(f"Answer was {word}")
+        print(f"Answer was {word}")
+        input(chat.send_message(message=[f"on the previous question, explain why the answer is not '{answer}' and the real answer is '{word}.' Give a large breakdown why, or if their answer is more correct than the real answer, address it"]).text)
     clear()
     questioning(questions)
 

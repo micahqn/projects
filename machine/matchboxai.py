@@ -7,8 +7,8 @@ from sqlitedict import SqliteDict
 
 current_grid = [
     [" ", " ", " "], 
-    [" ", "X", " "], 
-    [" ", " ", "O"]
+    [" ", " ", " "], 
+    [" ", " ", " "]
     ]
 
 class MatchboxModel:

@@ -1,4 +1,4 @@
-package java;
+package javaProjects;
 import java.util.Scanner;
 
 class NoughtsNCrosses {

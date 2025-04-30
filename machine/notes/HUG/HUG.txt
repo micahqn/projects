@@ -1,0 +1,49 @@
+Place - A specific point on Earth, distinguished by a particular characteristic 
+
+Region - An area distinguished by one or more distinctive characteristics
+
+GIS - A computer system that captures, stores, queries, and displays geographic data
+
+Mental Map - A representation of a portion of Earth's surface based on what an individual knows about a place that contains personal impressions of what is in the place and where the place is located
+
+Relative Location - The location of a place relative to other places
+
+Absolute Location - Description of the position of a place in a way that never changes, such as geographic coordinates of latitude and longitude
+
+Formal Region - An area in which most people share in one or more distinctive characteristics
+
+Functional Region - An area organized around a node or focal point
+
+Vernacular Region - An area that people believe exists as part of their cultural identity
+
+Distribution - The arrangement of something across Earth’s surface
+
+Density - The frequency with which something exist within a given unit of area
+
+Diffusion - The process by which a feature spreads from one place to another over time
+
+Distance Decay -The diminished importance and eventual disappearance of a phenomenon with increasing distance from its origin
+
+Time-Space Compression - The reduction in the time it takes to diffuse something to a distant place as a result of improved communication and transportation systems
+
+Sustainability - The use of Earth's renewable and nonrenewable natural resources in ways that do not constrain resource use in the future
+
+Clustering - When a set of spatial objects are grouped into several subsets
+
+Dispersal - The spacing of objects within geographic population boundaries
+
+Environmental Determinism - A nineteenth and early twentieth century approach to the study of geography which argued that the general laws sought by human geographers could be found in the physical sciences. Geography was therefore the study of how the physical environment cause human activities
+
+Globalization - Actions or processes that involve the entire world and result in making something worldwide in scope
+
+Possibilism - The theory that the physical environment may set limits on human actions but people have the ability to adjust to the physical environment and choose a course of action from many alternatives
+
+Reference Map - Shows the location of human and physical objects
+
+Thematic Map - Shows the spatial arrangement of features or data
+
+Scale of Analysis - The level or perspective at which a problem or issue is studied or addressed
+
+Site - The physical character of a place
+
+Situation - The location of a place relative to another place
