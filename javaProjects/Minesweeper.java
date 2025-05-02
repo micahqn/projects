@@ -10,14 +10,31 @@ public class Minesweeper {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String[][] field = {
-            {"?", "?", "?", "?", "?", "?", "?", "?", "?"},
-            {"?", "?", "?", "?", "?", "?", "?", "?", "?"},
-            {"?", "?", "?", "?", "?", "?", "?", "?", "?"},
-            {"?", "?", "?", "?", "?", "?", "?", "?", "?"},
-            {"?", "?", "?", "?", "?", "?", "?", "?", "?"},
-            {"?", "?", "?", "?", "?", "?", "?", "?", "?"},
-            {"?", "?", "?", "?", "?", "?", "?", "?", "?"},
-            {"?", "?", "?", "?", "?", "?", "?", "?", "?"},
+            {"#", "#", "#", "#", "#", "#", "#", "#", "#"},
+            {"#", "#", "#", "#", "#", "#", "#", "#", "#"},
+            {"#", "#", "#", "#", "#", "#", "#", "#", "#"},
+            {"#", "#", "#", "#", "#", "#", "#", "#", "#"},
+            {"#", "#", "#", "#", "#", "#", "#", "#", "#"},
+            {"#", "#", "#", "#", "#", "#", "#", "#", "#"},
+            {"#", "#", "#", "#", "#", "#", "#", "#", "#"},
+            {"#", "#", "#", "#", "#", "#", "#", "#", "#"},
+            {"#", "#", "#", "#", "#", "#", "#", "#", "#"},
+            {"#", "#", "#", "#", "#", "#", "#", "#", "#"},
+            {"#", "#", "#", "#", "#", "#", "#", "#", "#"},
+            {"#", "#", "#", "#", "#", "#", "#", "#", "#"},
+            {"#", "#", "#", "#", "#", "#", "#", "#", "#"},
+            {"#", "#", "#", "#", "#", "#", "#", "#", "#"},
+            {"#", "#", "#", "#", "#", "#", "#", "#", "#"},
+            {"#", "#", "#", "#", "#", "#", "#", "#", "#"},
+            {"#", "#", "#", "#", "#", "#", "#", "#", "#"},
+            {"#", "#", "#", "#", "#", "#", "#", "#", "#"},
+            {"#", "#", "#", "#", "#", "#", "#", "#", "#"},
+            {"#", "#", "#", "#", "#", "#", "#", "#", "#"},
+            {"#", "#", "#", "#", "#", "#", "#", "#", "#"},
+            {"#", "#", "#", "#", "#", "#", "#", "#", "#"},
+            {"#", "#", "#", "#", "#", "#", "#", "#", "#"},
+            {"#", "#", "#", "#", "#", "#", "#", "#", "#"},
+            {"#", "#", "#", "#", "#", "#", "#", "#", "#"}
         };
 
         // first dig
@@ -53,7 +70,8 @@ public class Minesweeper {
             }
         }
 
-        //field = digHandler(field, bombLayout, xcoord-1, ycoord-1);
+        printBoard(bombLayout);
+        field = digHandler(field, bombLayout, xcoord-1, ycoord-1);
         printBoard(field);
         scanner.close();
     }
@@ -61,24 +79,25 @@ public class Minesweeper {
     public static void printBoard(String[][] field) {
         clear();
         System.out.println("minesweeper\n");
-        System.out.print("  | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |\r\n" +
-                        "--|---|---|---|---|---|---|---|---|---|-");
-        for (int i = 0; i < 8; i++) {
+        System.out.print("  | A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z |\n" +
+                        "--|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|--");
+        for (int i = 0; i < 9; i++) {
 
             System.out.print("\n "+(i+1)+"|");
             for (int j = 0; j < field.length; j++) {
-                System.out.print(" "+field[i][j]+"  ");
+                System.out.print(" "+field[j][i]+"  ");
             }
-            System.out.print(" "+field[i][8]+" |");
+            System.out.print(" "+field[24][i]+" |");
 
-            if (i == 7) {System.out.print("\n--|---|---|---|---|---|---|---|---|---|-");} 
-            else {System.out.print("\n--|                                   |-");}
+            if (i == 8) {System.out.print("\n--|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|--");} 
+            else {System.out.print("\n--|                                                                                                       |-");}
         }
     }
 
     public static String[][] digHandler(String[][] field, String[][] bombLayout, int x, int y) {
         if (isInt(bombLayout[y][x])) {
             field[y][x] = bombLayout[y][x];
+
         } else if (bombLayout[y][x] == " ") {
             List<int[]> aliveTiles = new ArrayList<>();
             List<int[]> deadTiles = new ArrayList<>();
@@ -103,6 +122,10 @@ public class Minesweeper {
                     if (newX >= 0 && newX < field[position[1]].length && newY >= 0 && newY < field.length) {
                         if (bombLayout[newY][newX].equals(" ") && !containsPosition(deadTiles, newpos)) {
                             aliveTiles.add(new int[]{newX, newY});
+                        } else {
+                            if (isInt(bombLayout[newY][newX]) && !containsPosition(deadTiles, newpos)) {
+                                field[newY][newX] = bombLayout[newY][newX];
+                            }
                         }
                     }
                 }
@@ -115,7 +138,12 @@ public class Minesweeper {
 
     public static String[][] generateBombs(String[][] field) {
         Random random = new Random();
-        String[][] bombLayout = field.clone();
+
+        final String[][] bombLayout = new String[field.length][];
+        for (int i = 0; i < field.length; i++) {
+            bombLayout[i] = Arrays.copyOf(field[i], field[i].length);
+        }
+        
         for (int y = 0; y < bombLayout.length; y++) {
             Arrays.fill(bombLayout[y], " ");
         }

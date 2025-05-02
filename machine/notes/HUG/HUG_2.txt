@@ -1,0 +1,33 @@
+Carrying Capacity - The maximum population size of a species that the environment can sustain indefinitely
+
+Arithmetic Density - The total number of people divided by total land area
+
+Physiological Density - The number people per unit area of arable land
+
+Agricultural Density - Ratio of farmers to the amount of arable land
+
+Natural Increase Rate (NIR) - The percentage by which a population grows in a year
+
+Doubling Time - The number of years needed to double a population
+
+Crude Birth Rate - The total number of live births in a year for every 1000 people alive in a society.
+
+Total Fertility Rate - Number of births in a society
+
+Infant Mortality Rate - Annual number of deaths of infants under one year of age
+
+Life Expectancy -  The average number of years an individual can be expected to live.
+
+Population Pyramid - A bar graph that displays the percentage of a place's population for each age and gender. 
+
+Dependency Ratio - The number of people who are too young or too old to work compared to the number of people in their productive years.
+
+Epidemiologic Transition Model - Focuses on distinctive health threats in each stage of the demographic transition.
+
+Pronatalist policy - A government policy that supports higher birth rates. 
+
+Antinatalist policy - A government policy that supports lower birth rates.
+
+Demographic Transition Model - The process of change in a society’s population from a condition of high crude birth and death rates and low natural increase to a condition of low crude birth and death rates, low rate of natural increase, and higher total population. 
+
+Malthusian Theory - A theory that says the supply of food cannot keep up with the growth of the human population. 
