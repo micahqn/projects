@@ -1,0 +1,93 @@
+State - An area organized into a political unit and ruled by an established government that has control over its internal and foreign affairs.
+
+Nation - A large group of people who are united by common cultural characteristics, such as language and ethnicity, or by shared history. 
+
+Nation-State - A state whose territory corresponds to that occupied by a particular nation. 
+
+Stateless Nation - A nation of people without a state that it considers home.
+
+Multinational State - A state that constrains two or more cultural groups with traditions of self-determination that agree to coexist peacefully by recognizing each other as distinct nationalities. 
+
+Multi-State Nation - Ethnic or cultural groups that exist across multiple state boundaries, forming a cohesive identity despite being divided by political borders. 
+
+Autonomous Region - An area within a country that has a degree of self-governance and independence, allowing them to manage their own affairs while still being part of the larger state. 
+
+Semi-Autonomous Region - An area within a country that has a degree of self-governance, but not complete sovereignty.
+
+Sovereignty - Ability of a state to govern its territory free from control of its internal affairs by other states.
+
+Self-Determination - The concept that ethnicities have the right to govern themselves. 
+
+Colonialism - An attempt by one country to establish settlements and to impose its political, economic, and cultural principles in another territory. 
+
+Imperialism - The policy of extending a country’s power and influence through colonization, military force, or other means.
+
+Devolution - The movement of power from the central government to regional governments within the state or breakup of a large state into several independent ones. 
+
+Neocolonialism - The practice of using economic, political, and cultural pressures to influence countries, especially those that were formerly colonized, without direct military or political intervention. 
+
+Shatterbelts - Regions that are politically fragmented and often subject to external pressures and conflicts, typically located between larger more powerful nations. 
+
+Choke Point - Geographic locations where the flow of people and goods can be constricted and choked off in the event of a conflict.
+
+Territoriality - The actions, behaviors, or attitudes used by a group or state to exert control or influence over a specific geographic space. 
+
+Relic Boundary - A type of political boundary that no longer functions as an official border but still holds historical significance and may influence present-day cultural or social practices. 
+
+Superimposed Boundary - Political barriers drawn in an area with complete disregard for the cultural, religious, and ethnic divisions within the people living there. 
+
+Subsequent Boundary - A boundary that is established after the settlement in that area occurred. 
+
+Antecedent Boundary - A boundary established before the area in question is well populated or developed, often based on natural features like rivers or mountains. 
+
+Geometric Boundary - A boundary created by using lines of latitude and longitude and their associated arcs. 
+
+Consequent Boundary - A boundary that is drawn to accommodate the cultural, ethnic , or social characteristics of a particular area. 
+
+Defined Boundary - A boundary established by a legal document. 
+
+Delimited Boundary - A geographic boundary that is drawn on a map. 
+
+Demarcated Boundary - A defined line that marks the limits of a state’s territory, established through physical markers or agreed-upon boundaries in maps. 
+
+Demilitarized Zone - Specific areas where military forces and equipment are prohibited, aiming to reduce the potential for conflict between neighboring states. 
+
+Berlin Conference - A meeting of European powers aimed at regulating European colonization and trade in Africa during the New Imperialism period. 
+
+United Nations Convention on the Law of the Sea - An international treaty that outlines the rights and responsibilities of nations in their use of the world’s oceans. 
+
+International Waters - The areas of the sea that are not under the jurisdiction of any country.
+
+Territorial Sea - The areas where the state has sovereignty over the water, its resources, and the airspace above it. 
+
+Exclusive Economic Zone - The areas where the state has exclusive rights to explore and exploit marine resources. 
+
+Voting District - Geographic areas defined for the purpose of electing representatives to government bodies. 
+
+Redistricting - The process of redrawing the boundaries of electoral districts to reflect changes in population and ensure fair representation. 
+
+Gerrymandering - The process of redrawing legislative boundaries for the purpose of benefiting the party in power. 
+
+Federal State - An internal organization of a state that allocates most powers to units of local government. 
+
+Unitary State - An internal organization of a state that places most power in the hands of central government officials.
+
+Ethnic Separatism - The advocacy for the separation of a particular ethnic group forms a larger political entity, often driven by the desire for self-determination, autonomy, or independence. 
+
+Ethnic Cleansing - The systematic removal or extermination of an ethnic group from a particular territory, often through violent means. 
+
+Terrorism - The threatened or actual use of illegal force and violence by a non state actor to attain a political, economic, religious, or social goal through feat, coercion, or intimidation. 
+
+Irredentism - The process by which a part of an existing state breaks away and merges with another. 
+
+Supranationalism - The process of nation states organizing politically and economically into organization or alliance. 
+
+Economies of Scale - The reduction in the per unit cost of production as the volume of production increases. 
+
+UN - An international organization aimed at fostering global cooperation and maintaining peace and security. 
+
+NATO - An alliance between nations to resist the spread of Communism and protect against its forces. 
+
+EU - A political and economic union of European countries that are committed to promoting integration and cooperation among its member states. 
+
+ASEAN - An organization of countries in southwest Asia set up to promote cultural, economic, and political development in the region. 

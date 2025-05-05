@@ -34,6 +34,7 @@ public class Minesweeper {
             {"#", "#", "#", "#", "#", "#", "#", "#", "#"},
             {"#", "#", "#", "#", "#", "#", "#", "#", "#"},
             {"#", "#", "#", "#", "#", "#", "#", "#", "#"},
+            {"#", "#", "#", "#", "#", "#", "#", "#", "#"},
             {"#", "#", "#", "#", "#", "#", "#", "#", "#"}
         };
 
@@ -84,10 +85,10 @@ public class Minesweeper {
         for (int i = 0; i < 9; i++) {
 
             System.out.print("\n "+(i+1)+"|");
-            for (int j = 0; j < field.length; j++) {
+            for (int j = 0; j < field.length-1; j++) {
                 System.out.print(" "+field[j][i]+"  ");
             }
-            System.out.print(" "+field[24][i]+" |");
+            System.out.print(" "+field[25][i]+" |");
 
             if (i == 8) {System.out.print("\n--|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|--");} 
             else {System.out.print("\n--|                                                                                                       |-");}
@@ -150,9 +151,9 @@ public class Minesweeper {
 
         int[][] directions = {{1, 1}, {1, 0}, {1, -1}, {0, -1}, {-1, -1}, {-1, 0}, {-1, 1}, {0, 1}};
 
-        for (int i = 0; i < 7; i++) {
+        for (int i = 0; i < 35; i++) {
             int x = random.nextInt(9);
-            int y = random.nextInt(8);
+            int y = random.nextInt(25);
 
             if (bombLayout[y][x] == " ") {
                 bombLayout[y][x] = "*";
