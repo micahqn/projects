@@ -1,0 +1,31 @@
+Acetylcholine - Neurotransmitter that enables muscle action, learning, and memory.
+
+Dopamine - Neurotransmitter that influences movement, learning, attention, and emotion.
+
+Serotonin - Neurotransmitter that affects mood, hunger, sleep, and arousal.
+
+Norepinephrine - Neurotransmitter that affects alertness and arousal.
+
+GABA - A major inhibitory neurotransmitter.
+
+Glutamate - A major excitatory neurotransmitter; involved in memory.
+
+Substance P - Neurotransmitter for pain perception. 
+
+Depression - Too much Acetylcholine
+
+Dementia - Too little Acetylcholine
+
+Anxiety - Too much Norepinephrine
+
+Depression - Too little Norepinephrine
+
+Schizophrenia - Too much Dopamine
+
+Parkinsons - Too little Dopamine
+
+Seizure - Too little GABA
+
+Insomnia - Too little Glutamate
+
+Depression - Too little Serotonin

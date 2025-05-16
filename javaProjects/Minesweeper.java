@@ -206,6 +206,33 @@ public class Minesweeper {
         }
     }
 
+    public static String inputHandler(String input) {
+        if (input.length() != 2) {
+            return "Invalid input";
+        }
+
+        char x = input.charAt(0);
+        char y = input.charAt(1);
+
+        if (!Character.isAlphabetic(x) || !Character.isDigit(y)) {
+            return "Invalid input";
+        }
+
+        //int xcoord = Character.getNumericValue(x);
+        //int ycoord = Character.getNumericValue(y);
+
+        return "";
+    }
+
+    public static int letterToPosition(char letter) {
+        letter = Character.toLowerCase(letter);
+        if (letter >= 'a' && letter <= 'z') {
+            return letter - 'a' + 1;
+        } else {
+            return -1; // Indicate invalid input
+        }
+    }
+
     public static void clear() {
         System.out.print("\033[H\033[2J");
         System.out.flush();
