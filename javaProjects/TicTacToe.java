@@ -1,4 +1,5 @@
 package javaProjects;
+import java.util.Objects;
 import java.util.Scanner;
 
 class NoughtsNCrosses {
@@ -24,8 +25,8 @@ class NoughtsNCrosses {
                 continue;
             }
 
-            Integer xcoord = Integer.parseInt(Character.toString(input.charAt(0)));
-            Integer ycoord = Integer.parseInt(Character.toString(input.charAt(1)));
+            int xcoord = Integer.parseInt(Character.toString(input.charAt(0)));
+            int ycoord = Integer.parseInt(Character.toString(input.charAt(1)));
 
             if ((xcoord > 3 || xcoord < 0) || (ycoord > 3 || ycoord < 0)) {
                 move -= 1;
@@ -66,7 +67,7 @@ class NoughtsNCrosses {
         }
 
         String winner = winCondition(board);
-        if (winner != " ") {
+        if (!Objects.equals(winner, " ")) {
             System.out.println(winner+" has won!");
             return true;
         }
@@ -112,10 +113,7 @@ class NoughtsNCrosses {
 
     public static boolean areEqual(String[] line) {
 
-        if (line[0] == line[1] && line[1] == line[2]) {
-            return true;
-        }
-        return false;
+        return Objects.equals(line[0], line[1]) && Objects.equals(line[1], line[2]);
     }
 
 }

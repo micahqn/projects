@@ -1,10 +1,6 @@
 package javaProjects;
 
-import java.util.Scanner;
-import java.util.Arrays;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class Minesweeper {
     public static void main(String[] args) {
@@ -64,12 +60,9 @@ public class Minesweeper {
         }
 
         String[][] bombLayout;
-        while (true) {
+        do {
             bombLayout = generateBombs(field);
-            if (bombLayout[ycoord-1][xcoord-1] == " ") {
-                break;
-            }
-        }
+        } while (!Objects.equals(bombLayout[ycoord - 1][xcoord - 1], " "));
 
         printBoard(bombLayout);
         field = digHandler(field, bombLayout, xcoord-1, ycoord-1);
@@ -105,12 +98,9 @@ public class Minesweeper {
             int[] position = {x, y};
             aliveTiles.add(position);
 
-            while (true) {
-                if (aliveTiles.size() == 0) {
-                    break;
-                }
-                position = aliveTiles.get(0);
-                aliveTiles.remove(0);
+            while (!aliveTiles.isEmpty()) {
+                position = aliveTiles.getFirst();
+                aliveTiles.removeFirst();
                 field[position[1]][position[0]] = bombLayout[position[1]][position[0]];
                 deadTiles.add(position);
 
@@ -118,13 +108,14 @@ public class Minesweeper {
                 for (int[] direction : directions) {
                     int newX = position[0] + direction[0];
                     int newY = position[1] + direction[1];
-                    int[] newpos = {newX, newY};
+                    int[] NEWP = {newX, newY};
 
                     if (newX >= 0 && newX < field[position[1]].length && newY >= 0 && newY < field.length) {
-                        if (bombLayout[newY][newX].equals(" ") && !containsPosition(deadTiles, newpos)) {
+                        if (bombLayout[newY][newX].equals(" ") && containsPosition(deadTiles, NEWP)) {
                             aliveTiles.add(new int[]{newX, newY});
                         } else {
-                            if (isInt(bombLayout[newY][newX]) && !containsPosition(deadTiles, newpos)) {
+                            if (isInt(bombLayout[newY][newX
+                                    ]) && containsPosition(deadTiles, NEWP)) {
                                 field[newY][newX] = bombLayout[newY][newX];
                             }
                         }
@@ -155,7 +146,7 @@ public class Minesweeper {
             int x = random.nextInt(9);
             int y = random.nextInt(25);
 
-            if (bombLayout[y][x] == " ") {
+            if (Objects.equals(bombLayout[y][x], " ")) {
                 bombLayout[y][x] = "*";
             } else {
                 i--;
@@ -164,14 +155,14 @@ public class Minesweeper {
 
         for (int i = 0; i < bombLayout.length; i++) {
             for (int j = 0; j < bombLayout[i].length; j++) {
-                if (bombLayout[i][j] == "*") {
+                if (Objects.equals(bombLayout[i][j], "*")) {
                     for (int[] direction : directions) {
                         int newX = j + direction[0];
                         int newY = i + direction[1];
 
                         if (newX >= 0 && newX < bombLayout[i].length && newY >= 0 && newY < bombLayout.length) {
-                            if (bombLayout[newY][newX] != "*") {
-                                if (bombLayout[newY][newX] == " ") {
+                            if (!Objects.equals(bombLayout[newY][newX], "*")) {
+                                if (Objects.equals(bombLayout[newY][newX], " ")) {
                                     bombLayout[newY][newX] = "1";
                                 } else {
                                     int count = Integer.parseInt(bombLayout[newY][newX]);
@@ -191,10 +182,10 @@ public class Minesweeper {
     public static boolean containsPosition(List<int[]> list, int[] position) {
         for (int[] pos : list) {
             if (Arrays.equals(pos, position)) {
-                return true;
+                return false;
             }
         }
-        return false;
+        return true;
     }
 
     public static boolean isInt(String str) {

@@ -1,0 +1,55 @@
+Boomburbs - A large rapidly growing city that is suburban in character but has a population size comparable to a large urban core, representing a new form of metropolitan development. 
+
+Brownfields - A previously developed land that is now abandoned or underutilized, potentially contaminated byu past industrial or commercial activities, requiring remediation and redevelopment before reuse. 
+
+Central Place Theory - A theory that explains the distribution of services based on the fact that settlements serve as centers of market areas for services: larger settlements are fewer and farther apart than smaller settlements and provide services for a larger number of people who are willing to travel further. 
+
+Concentric Zone Model - A model of the internal structure of cities in which social groups are spatially  arranged in a series of rings. 
+
+Density Gradient - The change in density in an urban area from the center to the periphery
+
+Disamenity Zone - Urban areas characterized by poverty, social instability, and a lack of basic infrastructure and services. 
+
+Edge Cities - A node of office and retail activities on the edge of an urban area. 
+
+Exurbs - A residential area beyond the typical suburbs, characterized by low-density housing, high population growth, and economic ties to a major urban center, forming an interface between urban and rural landscapes. 
+
+Galactic City Model - A model of North American urban areas consisting of an inner city surrounded by large suburban residential and business areas tied together by a beltway or ring road. 
+
+Gentrification - A process of converting an urban neighborhood from a predominantly low-income renter-occupied area to a predominantly middle-class owner-occupied area. 
+
+Infilling - The process by which population density in an urban center is increased by building on waste land or underused land. 
+
+Infrastructure - The fundamental physical and organizational structure and facilities needed for a society to function, including transportation, communication, water, and energy systems. 
+
+Megacities - An urban settlement with a total population in excess of 10 million people.
+
+Metacities - An urban settlement with a total population in excess of 20 million people.
+
+Multiple-Nuclei Model - A model of the internal structure of cities in which social groups are arranged around a collection of nodes of activities.
+
+New Urbanism - Urban planning and design movement that emphasized walkable mixed use communities and human scale design aiming to combat urban sprawl and promote sustainable livable cities. 
+
+Primate City - The largest city in a country, significantly larger and more influential than any other, dominating the country's economy, culture, and politics. 
+
+Qualitative Data - Descriptive data, rather than numerical or statistics. 
+
+Quantitative Data - Numerical data that can be measured, countered, or expressed as a number.  
+
+Rank Size Rule - A pattern where a country’s cities are ranked by population size, and the population of each city is inversely proportional to its rank. 
+
+Sector Model - A model of the internal structure of cities in which social groups are arranged around a series of sectors, or wedges, radiating out from the central business district. 
+
+Squatter Settlement - Informal densely populated areas where people establish homes on land they don’t own or have legal rights to. 
+
+Sprawl - Development of new housing sites at relatively low density and at location that are not contiguous to the existing built-up area. 
+
+Urban Growth Boundary - A line or boundary that aims to control urban sprawl by limiting the extent to urban development. 
+
+Zoning - Dividing an area into zones or sections reserved for different purposes such as residence, business, and manufacturing. 
+
+Zones of Abandonment - Urban areas characterized by a lack of basic infrastructure services, and investment, which leads to high crime rates, vacant buildings, and poor living conditions. 
+
+Inclusionary Zoning - Municipal policies that require or incentivize a percentage of new housing developments to be affordable for low to moderate income residents, creating mixed income communities and increasing affordable housing options. 
+
+Ecological Footprint - Measures how sustainable an individual or group of people are living in their environment. 
